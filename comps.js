@@ -53,7 +53,7 @@ function get_event_list(events){
     img_container.setAttribute("id", "event-list");
     events.forEach(e =>{
         let img = document.createElement("img");
-        let src_url =  "images/event_logos/" + e + ".svg";
+        let src_url =  e + ".svg";
         img.setAttribute("src", src_url);
         img.setAttribute("class", "conditional-image");
         img_container.appendChild(img);
